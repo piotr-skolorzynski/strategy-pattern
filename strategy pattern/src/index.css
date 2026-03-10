@@ -4,11 +4,87 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #ddd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.numbers-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.numbers-container {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.number {
+  padding: 10px;
+  background-color: #514d4d;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.filter-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn--green {
+  background-color: #80c7e1;
+}
+
+.btn-even {
+  background-color: #2a71b9;
+  color: #fff;
+}
+
+.btn-odd {
+  background-color: #96231d;
+  color: #fff;
+}
+
+.btn-positive {
+  background-color: #20bd18;
+  color: #fff;
+}
+
+.btn-negative {
+  background-color: #1f1557;
+  color: #fff;
 }

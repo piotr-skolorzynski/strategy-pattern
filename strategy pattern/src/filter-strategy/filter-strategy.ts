@@ -30,15 +30,15 @@ class FilterStrategy {
         [FilterOption.Negative, (v: number) => v < 0]
     ]);
 
-    public select(collection: number[], strategy: string): number[] | null {
+    public select(collection: number[], strategy: string): number[] {
         if(!collection.length || !this.#filterringStrategies.has(strategy))
         {
-            return null;
+            return [] as number[];
         }
 
         const predicate = this.#filterringStrategies.get(strategy);
 
-        return predicate ? collection.filter(predicate) : null;
+        return predicate ? collection.filter(predicate) : [] as number[];
     }
 }
 
